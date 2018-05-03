@@ -11,11 +11,6 @@ pipeline {
         echo "Test password = ${TEST_USER_PSW}"
       }
     }
-    
-      steps {
-        echo "Deploying ${APP_VERSION}."
-      }
-    }
   }
   environment {
     MY_NAME = 'Mouhab'
@@ -24,5 +19,3 @@ pipeline {
   parameters {
     string(name: 'Name', defaultValue: 'whoever you are', description: 'Who should I say hi to?')
   }
-  
-}
